@@ -1,0 +1,26 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "llms-txt/section",
+	"version": "0.1.0",
+	"title": "LLMs.txt Section",
+	"category": "text",
+	"description": "A single section in an llms.txt document. Contains a section heading and a list of links.",
+	"keywords": [ "llms", "ai", "section" ],
+	"textdomain": "lh-ai-legibility",
+	"supports": {
+		"html": false,
+		"reusable": false,
+		"lock": false,
+		"inserter": true
+	},
+	"attributes": {
+		"sectionTitle": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"allowedBlocks": [ "core/list" ],
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./editor.css"
+}
